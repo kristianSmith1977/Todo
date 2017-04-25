@@ -1,8 +1,14 @@
-﻿@model ToDo.Models.Todo 
+﻿@using ToDo.Models
+@model System.Collections.Generic.List<Todo>
 @{
-    ViewBag.Title = "Index";;
+    ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@Model.Name</h2>
-
+<h2>Current To Do items in List</h2>
+<ul>
+@foreach (var todo in Model)
+{
+    <li>@todo.Name <text> - </text> @todo.Description</li>
+}
+</ul>

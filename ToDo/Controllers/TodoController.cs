@@ -13,8 +13,15 @@ namespace ToDo.Controllers
         // GET: Todo
         public ActionResult Index()
         {
-            var todo = new Todo() {Name = "Test to do item" , Description="I need to WRITE the To do program"};
-            return View(todo);
+            var todos = new List<Todo>
+            {
+                new Todo{Name= "test1", Description="This is the info for test1"},
+                new Todo{Name= "Test2", Description="This is the info for test2"}
+            };
+
+           
+            
+            return View(todos);
         }
     }
 }
