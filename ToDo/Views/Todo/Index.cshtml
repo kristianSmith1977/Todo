@@ -6,9 +6,22 @@
 }
 
 <h2>Current To Do items in List</h2>
-<ul>
-@foreach (var todo in Model)
-{
-    <li>@todo.Name <text> - </text> @todo.Description</li>
-}
-</ul>
+<div class="table-responsive">
+    <table class='table-hover'>
+
+        <thead>
+        <th>Item name</th>
+        <th>Short Description</th>
+        <th></th>
+        </thead>
+
+        @foreach (var todo in Model)
+        {
+            <tr>
+                <td>@todo.Name </td>
+                <td>@todo.Description</td>
+                <td></td>
+            </tr>
+        }
+    </table>
+    </div>
