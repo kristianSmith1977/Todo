@@ -94,3 +94,7 @@ C:\websites\ASP.NET\ToDo\ToDo\bin\Microsoft.AI.Web.xml
 C:\websites\ASP.NET\ToDo\ToDo\obj\Debug\ToDo.csprojResolveAssemblyReference.cache
 C:\websites\ASP.NET\ToDo\ToDo\obj\Debug\ToDo.dll
 C:\websites\ASP.NET\ToDo\ToDo\obj\Debug\ToDo.pdb
+C:\websites\ASP.NET\ToDo\ToDo\obj\Debug\ToDo.Migrations.IntiialModel.resources
+C:\websites\ASP.NET\ToDo\ToDo\obj\Debug\ToDo.csproj.GenerateResource.Cache
+C:\websites\ASP.NET\ToDo\ToDo\obj\Debug\ToDo.Migrations.AddShortDescAddedDateToTodo.resources
+C:\websites\ASP.NET\ToDo\ToDo\obj\Debug\ToDo.Migrations.ApplyAnnotationstoToDo.resources

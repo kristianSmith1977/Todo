@@ -31,6 +31,17 @@ namespace ToDo.Migrations
                 .Index(t => t.RoleId);
             
             CreateTable(
+                "dbo.Todoes",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Name = c.String(),
+                        Description = c.String(),
+                        Complete = c.Boolean(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
                 "dbo.AspNetUsers",
                 c => new
                     {
@@ -92,6 +103,7 @@ namespace ToDo.Migrations
             DropTable("dbo.AspNetUserLogins");
             DropTable("dbo.AspNetUserClaims");
             DropTable("dbo.AspNetUsers");
+            DropTable("dbo.Todoes");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
         }
